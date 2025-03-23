@@ -19,6 +19,7 @@ def dqn(brain_name, env: UnityEnvironment, agent: Agent, n_episodes: int = 2000,
         eps_start (float): starting value of epsilon, for epsilon-greedy action selection
         eps_end (float): minimum value of epsilon
         eps_decay (float): multiplicative factor (per episode) for decreasing epsilon
+        training_trial_number: (string): Indicates the name of the training trial for the sake of saving models with the respective name
     """
     scores = []                        # list containing scores from each episode
     scores_window = deque(maxlen=100)  # last 100 scores
